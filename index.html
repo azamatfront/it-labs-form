@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title></title>
+	<title>IT-Labs Programming Academy</title>
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css">
@@ -21,7 +21,7 @@
 			<section class="lead">
 				<div class="lead__container container">
 					<div class="lead__row row">
-						<div class="col-12 col-md-8 col-sm-12">
+						<div class="col-lg-4">
 							<div class="lead__form">
 								<div class="lead__header lead__block">
 									<div class="lead__banner">
@@ -39,33 +39,37 @@
 									</div>
 								</div>
 
-								<span class="error animated tada" id="msg"></span>
-
-								<form class="form" id="form" onsubmit="return checkStuff()">
+								<form class="form" name="Form" id="form">
 									<div class="form__row row">
 										<div class="col-lg-12">
 											<div class="form__block">
-												<input type="text" name="firstname" placeholder="Ism" id="firstname" autocomplete="off">
+												<div class="error" id="firstnameErr"></div>
+												<input type="text" placeholder="Ism" id="firstname" />
 											</div>
 										</div>
 										<div class="col-lg-12">
 											<div class="form__block">
-												<input type="text" name="lastname" placeholder="Familya" id="lastname" autocomplete="off">
+												<div class="error" id="lastnameErr"></div>
+												<input type="text" placeholder="Familya" id="lastname" />
 											</div>
 										</div>
 										<div class="col-lg-12">
 											<div class="form__block">
-												<input type="text" name="phone" placeholder="Telefon raqam" id="phone" autocomplete="off">
+												<div class="error" id="phoneErr"></div>
+												<input type="text" placeholder="Telefon raqam" id="phone" />
 											</div>
 										</div>
 										<div class="col-lg-12">
 											<div class="form__block">
-												<input type="email" name="email" placeholder="Email" id="email" autocomplete="off">
+												<div class="error" id="emailErr"></div>
+												<input type="email" placeholder="Email" id="email" />
 											</div>
 										</div>
 										<div class="col-lg-12">
 											<div class="form__block">
-												<select name="" id="select">
+												<div class="error error-center" id="selectErr"></div>
+												<select id="select">
+													<option>Kurslar</option>
 													<option value="Frontend">Frontend</option>
 													<option value="Python">Python</option>
 													<option value="SMM">SMM</option>

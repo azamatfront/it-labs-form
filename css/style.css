@@ -60,8 +60,7 @@ a:hover {
 }
 
 .lead__block {
-  padding: 22px;
-  margin-bottom: 22px;
+  padding: 15px;
 }
 
 .lead__banner {
@@ -114,12 +113,10 @@ a:hover {
   padding: 0 24px;
 }
 
-.form input[type="text"],
-.form input[type="email"] {
+input:not([type=submit]) {
   display: block;
-  margin: 20px auto;
+  margin: 5px auto;
   background: #262e49;
-  border: 0;
   border-radius: 5px;
   padding: 14px 10px;
   width: 100%;
@@ -130,7 +127,7 @@ a:hover {
   -ms-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  border: 1px solid transparent;
+	border: 1px solid #262e49;
 }
 ::-webkit-input-placeholder {
   color: #565f79;
@@ -157,19 +154,13 @@ a:hover {
 }
 
 .error {
-  background: #ff3333;
-  text-align: center;
-  width: 337px;
-  height: 20px;
-  padding: 2px;
-  border: 0;
-  border-radius: 5px;
-  margin: 10px auto 10px;
-  position: absolute;
-  top: 31%;
-  left: 7.2%;
-  color: white;
-  display: none;
+  color: #ff3333;
+  font-size: 90%;
+	text-align: left;
+}
+
+.error-center {
+	text-align: center !important;
 }
 
 .footer {
@@ -208,5 +199,5 @@ select {
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
   font-size: 0.875rem;
-  margin: 0 auto 20px auto;
+  margin: 5px auto 20px auto;
 }
