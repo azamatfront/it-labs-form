@@ -4,6 +4,7 @@ const form = document.getElementById('form');
 form.addEventListener('submit', e => {
 	e.preventDefault();
 	validateForm();
+	window.location.reload();
 });
 
 function printError(id, msg) {
@@ -134,7 +135,6 @@ function validateForm() {
 	
 		api.open("GET", url, true)
 		api.send()
-		window.location.reload();
   }
 }
 
